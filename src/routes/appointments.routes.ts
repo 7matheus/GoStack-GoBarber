@@ -28,7 +28,7 @@ appointmentRouter.post('/', (request, response) => {
       .json({ error: 'This appointment is already booked' })
   }
 
-  const appointment = appointmentsRepository.create(provider, date)
+  const appointment = appointmentsRepository.create({ provider, date })
 
   return response.json(appointment)
 })
