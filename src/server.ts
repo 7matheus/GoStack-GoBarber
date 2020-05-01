@@ -1,5 +1,7 @@
-import express, { json } from 'express'
+import express from 'express'
 import routes from './routes'
+
+import './database'
 
 const app = express()
 
