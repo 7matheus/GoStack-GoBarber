@@ -1,12 +1,11 @@
 import { Router } from 'express'
-import appointmentRouter from './appointments.routes'
+
+import appointmentsRouter from './appointments.routes'
+import usersRouter from './users.routes'
 
 const routes = Router()
 
-routes.use('/appointments', appointmentRouter)
-
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello World' })
-})
+routes.use('/appointments', appointmentsRouter)
+routes.use('/users', usersRouter)
 
 export default routes
