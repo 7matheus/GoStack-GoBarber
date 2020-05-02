@@ -2,5 +2,7 @@
 node_modules/
 build/
 temp/
-tmp/
-yarn-error.log
+
+tmp/*
+!tmp/.gitkeep
+
