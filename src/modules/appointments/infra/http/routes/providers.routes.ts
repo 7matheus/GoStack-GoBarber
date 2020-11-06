@@ -2,7 +2,7 @@ import { Router } from 'express';
 
 import ensureAuthenticaded from '@modules/users/infra/http/middleware/ensureAuthenticated';
 import ProvidersController from '@modules/appointments/infra/http/controllers/ProvidersController';
-import ProviderDayAvailabilityController from '../controllers/ProviderDayAvailabilityControllerts';
+import ProviderDayAvailabilityController from '../controllers/ProviderDayAvailabilityControllers';
 import ProviderMounthAvailabilityController from '../controllers/ProviderMounthAvailabilityController';
 
 const providersRouter = Router();
